@@ -1,0 +1,7 @@
+@RateLimiterExample_HostAddress = http://localhost:5087
+
+# 2 requests allowed per 10 seconds window
+GET {{RateLimiterExample_HostAddress}}/testRateLimiter/
+Accept: application/json
+
+###
