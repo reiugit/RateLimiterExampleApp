@@ -2,7 +2,7 @@
 
 * This Example uses a FixedWindow-RateLimiter.
 * The example limit is set to 2 requests per 10 seconds.
-___
+&nbsp;&nbsp;<br>
 
 When the rate limit is exceeded, the following response is returned:
 
