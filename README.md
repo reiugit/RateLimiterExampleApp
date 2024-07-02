@@ -9,10 +9,3 @@ When the rate limit is exceeded, the following response is returned:
 >  title:  "Rate Limit Exceeded"<br>
 >  status:  429<br>
 >  detail:  "Rate Limit of 2 requests per 10 seconds exceeded."<br>
-
->{<br>
-> &nbsp; "type":"https://tools.ietf.org/html/rfc6585#section-4",<br>
-> &nbsp; "title":"Rate Limit Exceeded",<br>
-> &nbsp; "status":429,<br>
-> &nbsp; "detail":"Rate Limit of 2 requests per 10 seconds exceeded."<br>
-> }<br>
