@@ -10,11 +10,12 @@ var app = builder.Build();
     app.UseRateLimiter();
 
     app.MapGet(
-        pattern: "/testRateLimiter",
+        pattern: "/test-ratelimiter",
         handler: () => new
         {
             statusCode = "200 OK",
-            message = "This response was allowed by the RateLimiter"
+            limit = "2 requests per 10 seconds are allowed.",
+            message = "OK - This response was allowed by the RateLimiter."
         })
         .RequireRateLimiting(RateLimiterPolicies.TwoRequestsPerTenSeconds);
 }
